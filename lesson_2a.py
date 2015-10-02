@@ -44,7 +44,7 @@ def draw_shape(ttl, n):
 
 def draw_rho(ttl):
     for i in range(4):
-        if divmod(i, 2) == 0:
+        if i % 2 == 0:
             ttl.forward(100)
             ttl.right(45)
         else:
@@ -66,7 +66,8 @@ while dg_count < 360:
     draw_rho(sqr)
     sqr.right(degree)
     dg_count += degree
-
+sqr.right(90)
+sqr.forward(300)
 # draw_circle()
 # draw_triangle()
 window.exitonclick()
