@@ -42,13 +42,13 @@ def draw_shape(ttl, n):
         ttl.right(360./n)
 
 
-def draw_rho(ttl):
+def draw_lozenge(ttl, size=100):
     for i in range(4):
         if i % 2 == 0:
-            ttl.forward(100)
+            ttl.forward(size)
             ttl.right(45)
         else:
-            ttl.forward(100)
+            ttl.forward(size)
             ttl.right(180-45)
 
 window = turtle.Screen()
@@ -58,16 +58,17 @@ sqr = turtle.Turtle()
 sqr.shape('square')
 sqr.color('yellow', 'blue')
 sqr.speed(10)
-# draw_shape(sqr, 3)
 degree = 10
 dg_count = 0
 while dg_count < 360:
-    # draw_shape(sqr, 4)
-    draw_rho(sqr)
+    draw_lozenge(sqr)
     sqr.right(degree)
     dg_count += degree
 sqr.right(90)
-sqr.forward(300)
-# draw_circle()
-# draw_triangle()
+sqr.forward(200)
+sqr.left(90)
+draw_lozenge(sqr, 50)
+sqr.right(90)
+sqr.forward(100)
+
 window.exitonclick()
