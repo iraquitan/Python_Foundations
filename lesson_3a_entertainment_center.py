@@ -61,4 +61,6 @@ matrix = lesson_3a_media.Movie('The Matrix', 'Neo (Keanu Reeves) believes that M
 
 # movies = [toy_story, avatar, v_for_vendetta, school_of_rock, ratatouille, midnight_in_paris, hunger_games]
 movies = [toy_story, v_for_vendetta, lotr_1, lotr_2, lotr_3, matrix]
-fresh_tomatoes.open_movies_page(movies)
+# fresh_tomatoes.open_movies_page(movies)
+# print(lesson_3a_media.Movie.VALID_RATINGS)
+print(lesson_3a_media.Movie.__doc__)

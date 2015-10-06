@@ -13,8 +13,9 @@ import webbrowser
 
 
 class Movie():
-    """Class to store movies"""
-    
+    """This class provides a way to store movie related information"""
+    VALID_RATINGS = ['G', 'PG', 'PG-13', 'R']
+
     def __init__(self, movie_title, movie_storyline, poster_image, trailer_youtube):
         """Constructor for Movie"""
         self.title = movie_title
